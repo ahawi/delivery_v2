@@ -16,10 +16,18 @@
 
 h1 {
   font-size: 56px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 24px;
 }
 
 body {
   line-height: 1.2;
+  background-color: var(--color-gray);
+  font-family: "Merriweather", sans-serif;
+  color: var(--color-dark);
 }
 
 .container {
@@ -35,6 +43,7 @@ body {
   justify-content: center;
   text-align: center;
   padding-block: 50px;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .header__img {
@@ -44,4 +53,275 @@ body {
 
 .header__description {
   font-size: 20px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.content {
+  display: flex;
+  column-gap: 30px;
+}
+
+.sushi__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.sushi__item {
+  background-color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  border-color: var(--color-gray-dark);
+}
+
+.sushi__item-title {
+  height: 70px;
+  font-weight: 400;
+}
+
+.sushi__item-quantity {
+  color: #6c757d;
+  font-size: 13px;
+  padding-bottom: 16px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.sushi__bottom {
+  display: flex;
+  align-items: center;
+  column-gap: 72px;
+  padding-bottom: 25px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.sushi__bottom-counter {
+  display: flex;
+  background-color: var(--color-gray-light);
+  height: 30px;
+  border-radius: var(--border-radius-large);
+}
+
+.sushi__item-footer-counter-count {
+  width: 40px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.sushi__item-footer-counter-item {
+  border: none;
+  width: 40px;
+  text-align: center;
+  border-radius: var(--border-radius-large);
+  background-color: var(--color-gray-light);
+}
+
+.sushi__bottom-right-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.sushi__bottom-right-block-weight {
+  line-height: 1;
+  color: #6c757d;
+  font-size: 13px;
+}
+
+.sushi__bottom-right-block-price {
+  font-size: 24px;
+  color: var(--color-dark);
+  font-weight: 600;
+}
+
+.sushi__bottom-button {
+  width: 100%;
+}
+
+.sushi__button {
+  width: 100%;
+  height: 38px;
+  background-color: var(--color-light);
+  color: var(--color-orange);
+  border: 1px solid var(--color-orange);
+  border-radius: var(--border-radius);
+  font-size: 16px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-light);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  border-color: var(--color-gray-dark);
+}
+
+.cart__body {
+  padding: 20px;
+}
+
+.cart__title {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+
+.cart__alert {
+  display: flex;
+  align-items: center;
+  padding-inline: 20px;
+  width: 308px;
+  height: 50px;
+  background-color: var(--color-gray-dark);
+  border-radius: var(--border-radius);
+  border: 1px solid #cfd3d5;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+  margin-block: 12px;
+}
+
+.cart__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  padding-block: 15px;
+  border-bottom: 1px solid var(--color-gray-dark);
+}
+
+.cart__item-img {
+  max-width: 100px;
+}
+
+.cart__item-description {
+  padding-top: 15px;
+}
+
+.cart__item-weight {
+  color: #6c757d;
+  font-size: 13px;
+  font-family: "Noto Sans", sans-serif;
+  padding-bottom: 15px;
+}
+
+.cart__bottom {
+  padding-top: 15px;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.cart__bottom-counter {
+  display: flex;
+  background-color: var(--color-gray-light);
+  height: 26px;
+  border-radius: var(--border-radius-large);
+  width: 90px;
+}
+
+.cart__bottom-counter-count {
+  width: 30px;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.cart__bottom-counter-item {
+  border: none;
+  width: 30px;
+  text-align: center;
+  border-radius: var(--border-radius-large);
+  background-color: var(--color-gray-light);
+}
+
+.cart__bottom-right-block-price {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.cart__total {
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding-bottom: 36px;
+  padding-inline: 20px;
+}
+
+.cart__total-delivery {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.cart__total-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cart__total-title--green {
+  color: #0ea107;
+  font-weight: 500;
+  padding-top: 2px;
+  font-size: 18px;
+}
+
+.cart__total-sum {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.cart__total-title--orange {
+  color: var(--color-orange);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.cart__total-order {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  background-color: var(--color-light);
+  border-top: var(--border);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  border-color: var(--color-gray-dark);
+  padding: 20px;
+}
+
+.cart__total-title {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+}
+
+.cart__total-input {
+  width: 100%;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  border-color: var(--color-gray-dark);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  padding-inline: 12px;
+  height: 36px;
+}
+
+.cart__total-button {
+  margin-top: 15px;
+  height: 38px;
+  background-color: var(--color-blue);
+  color: var(--color-light);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  padding-inline: 12px;
+  font-weight: 300;
 }
