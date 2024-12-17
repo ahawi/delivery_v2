@@ -1,298 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Доставка роллов</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<title>Document</title>
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <body>
+    <header class="header container">
+      <div class="header__inner">
+        <div class="header__img">
+          <img src="./img/logo/logo.svg" width="92" alt="Доставка роллов" />
+        </div>
+        <h1 class="header__title">Доставка роллов</h1>
+        <p class="header__description">Оперативно и вкусно</p>
+      </div>
+    </header>
 
-</head>
+    <main class="content">
+      <section class="section container">
+        <div class="sushi">
+          <ul class="sushi__list">
+            <li class="sushi__item">
+              <img
+                src="./img/roll/california-hit.jpg"
+                alt=""
+                width="348"
+                height="348"
+                loading="lazy"
+              />
+              <h2 class="sushi__item-title">Филадельфия хит ролл</h2>
+              <span class="sushi__item-quantity">6 шт</span>
+              <div class="sushi__bottom">
+                <div class="sushi__bottom-counter">
+                  <button class="sushi__item-footer-counter-item" type="button">
+                    -
+                  </button>
+                  <div class="sushi__item-footer-counter-count">1</div>
+                  <button class="sushi__item-footer-counter-item" type="button">
+                    +
+                  </button>
+                </div>
+                <div class="sushi__bottom-right-block">
+                  <span class="sushi__bottom-right-block-weight">180г</span>
+                  <span class="sushi__bottom-right-block-price">300 ₽</span>
+                </div>
+              </div>
+              <button class="sushi__button">+ в корзину</button>
+            </li>
+            <li class="sushi__item">
+              <img
+                src="./img/roll/california-hit.jpg"
+                alt=""
+                width="348"
+                height="348"
+                loading="lazy"
+              />
+              <h2 class="sushi__item-title">Филадельфия хит ролл</h2>
+              <span class="sushi__item-quantity">6 шт</span>
+              <div class="sushi__bottom">
+                <div class="sushi__bottom-counter">
+                  <button class="sushi__item-footer-counter-item" type="button">
+                    -
+                  </button>
+                  <div class="sushi__item-footer-counter-count">1</div>
+                  <button class="sushi__item-footer-counter-item" type="button">
+                    +
+                  </button>
+                </div>
+                <div class="sushi__bottom-right-block">
+                  <span class="sushi__bottom-right-block-weight">180г</span>
+                  <span class="sushi__bottom-right-block-price">300 ₽</span>
+                </div>
+              </div>
+              <button class="sushi__button">+ в корзину</button>
+            </li>
+            <li class="sushi__item">
+              <img
+                src="./img/roll/california-hit.jpg"
+                alt=""
+                width="348"
+                height="348"
+                loading="lazy"
+              />
+              <h2 class="sushi__item-title">Филадельфия хит ролл</h2>
+              <span class="sushi__item-quantity">6 шт</span>
+              <div class="sushi__bottom">
+                <div class="sushi__bottom-counter">
+                  <button class="sushi__item-footer-counter-item" type="button">
+                    -
+                  </button>
+                  <div class="sushi__item-footer-counter-count">1</div>
+                  <button class="sushi__item-footer-counter-item" type="button">
+                    +
+                  </button>
+                </div>
+                <div class="sushi__bottom-right-block">
+                  <span class="sushi__bottom-right-block-weight">180г</span>
+                  <span class="sushi__bottom-right-block-price">300 ₽</span>
+                </div>
+              </div>
+              <button class="sushi__button">+ в корзину</button>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-<body>
+      <section class="section container">
+        <div class="cart">
+          <!-- Корзина Пустая -->
+          <!-- <div class="cart" data-js-empty-cart>
+            <div class="cart__body">
+              <h3 class="cart__title">Ваш заказ</h3>
+              <p class="cart__alert">Корзина пуста</p>
+            </div>
+          </div> -->
 
-	<header class="header">
-		<div class="container text-center">
-			<img src="img/logo/logo.svg" width="92" alt="Суши и пицца">
-			<div class="display-4">Доставка роллов</div>
-			<p class="lead">Оперативно и вкусно</p>
-		</div>
-	</header>
+          <div class="cart__body">
+            <h3 class="cart__title">Ваш заказ</h3>
+            <ul class="cart__list">
+              <li class="cart__item">
+                <div class="cart__item">
+                  <img
+                    class="cart__item-img"
+                    src="./img/roll/philadelphia.jpg"
+                    alt=""
+                  />
 
-	<div class="container mb-5">
-		<div class="row">
-			<div class="col-md-8">
-				<div class="row">
+                  <div class="cart__item-description">
+                    <h4 class="cart__item-title">Филадельфия хит ролл</h4>
+                    <span class="cart__item-weight">6 шт. / 182г.</span>
 
-					<!-- Ролл -->
-					<div class="col-md-6">
-						<div class="card mb-4">
-							<img class="product-img" src="img/roll/philadelphia.jpg" alt="">
-							<div class="card-body text-center">
-								<h4 class="item-title">Филадельфия хит ролл</h5>
-								<p><small class="text-muted">6 шт.</small></p>
+                    <div class="cart__bottom">
+                      <div class="cart__bottom-counter">
+                        <button class="cart__bottom-counter-item" type="button">
+                          -
+                        </button>
+                        <div class="cart__bottom-counter-count">1</div>
+                        <button class="cart__bottom-counter-item" type="button">
+                          +
+                        </button>
+                      </div>
+                      <div class="cart__bottom-right-block">
+                        <span class="cart__bottom-right-block-price"
+                          >300 ₽</span
+                        >
+                      </div>
 
-								<div class="details-wrapper">
-									<div class="items">
-										<div class="items__control">-</div>
-										<div class="items__current">1</div>
-										<div class="items__control">+</div>
-									</div>
+                      <div class="price">
+                        <div class="price__currency">230 ₽</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
 
-									<div class="price">
-										<div class="price__weight">180г.</div>
-										<div class="price__currency">300 ₽</div>
-									</div>
-								</div>
+          <div class="cart__total">
+            <div class="cart__total-delivery">
+              <h5 class="cart__total-title">Доставка:</h5>
+              <span class="cart__total-title--green">бесплатно</span>
+            </div>
+            <div class="cart__total-sum">
+              <h5 class="cart__total-title">Итого:</h5>
+              <span class="cart__total-title--orange">330 ₽</span>
+            </div>
+          </div>
 
-								<button type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
-								
-							</div>
-						</div>
-					</div>
-					<!-- // Ролл -->
+          <div class="cart__total-order">
+            <h5 class="cart__total-title">Оформить заказ</h5>
+            <form>
+              <input
+                type="text"
+                class="cart__total-input"
+                placeholder="Ваш номер телефона"
+              />
+              <button type="submit" class="cart__total-button">Заказать</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
-					<!-- Ролл -->
-					<div class="col-md-6">
-						<div class="card mb-4">
-							<img class="product-img" src="img/roll/california-tempura.jpg" alt="">
-							<div class="card-body text-center">
-								<h4 class="item-title">Калифорния темпура</h5>
-								<p><small class="text-muted">6 шт.</small></p>
-
-								<div class="details-wrapper">
-									<div class="items">
-										<div class="items__control">-</div>
-										<div class="items__current">1</div>
-										<div class="items__control">+</div>
-									</div>
-
-									<div class="price">
-										<div class="price__weight">205г.</div>
-										<div class="price__currency">250 ₽</div>
-									</div>
-								</div>
-
-								<button type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
-								
-							</div>
-						</div>
-					</div>
-					<!-- // Ролл -->
-
-					<!-- Ролл -->
-					<div class="col-md-6">
-						<div class="card mb-4">
-							<img class="product-img" src="img/roll/zapech-california.jpg" alt="">
-							<div class="card-body text-center">
-								<h4 class="item-title">Запеченый ролл «Калифорния»</h5>
-								<p><small class="text-muted">6 шт.</small></p>
-
-								<div class="details-wrapper">
-									<div class="items">
-										<div class="items__control">-</div>
-										<div class="items__current">1</div>
-										<div class="items__control">+</div>
-									</div>
-
-									<div class="price">
-										<div class="price__weight">182г.</div>
-										<div class="price__currency">230 ₽</div>
-									</div>
-
-								</div>
-
-								<button type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
-								
-							</div>
-						</div>
-					</div>
-					<!-- // Ролл -->
-
-					<!-- Ролл -->
-					<div class="col-md-6">
-						<div class="card mb-4">
-							<img class="product-img" src="img/roll/philadelphia.jpg" alt="">
-							<div class="card-body text-center">
-								<h4 class="item-title">Филадельфия</h5>
-								<p><small class="text-muted">6 шт.</small></p>
-
-								<div class="details-wrapper">
-									<div class="items">
-										<div class="items__control">-</div>
-										<div class="items__current">1</div>
-										<div class="items__control">+</div>
-									</div>
-
-									<div class="price">
-										<div class="price__weight">230г.</div>
-										<div class="price__currency">320 ₽</div>
-									</div>
-
-								</div>
-
-								<button type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
-								
-							</div>
-						</div>
-					</div>
-					<!-- // Ролл -->
-
-				</div>
-			</div>
-			<div class="col-md-4">
-
-				<!-- Корзина Пустая -->
-				<div class="card mb-4">
-					<div class="card-body">
-						<h5 class="card-title">Ваш заказ</h5>
-						<div class="alert alert-secondary" role="alert">
-							Корзина пуста
-						</div>
-					</div>
-				</div>
-				<!-- // Корзина Пустая -->
-
-				<!-- Корзина Полная -->
-				<div class="card">
-					<div class="card-body">
-						<h5 class="card-title">Ваш заказ</h5>
-						
-						<!-- cart-wrapper -->
-						<div class="cart-wrapper">
-
-							<!-- cart-item  -->
-							<div class="cart-item">
-								<div class="cart-item__top">
-									<div class="cart-item__img">
-										<img src="img/roll/philadelphia.jpg" alt="">
-									</div>
-									<div class="cart-item__desc">
-										<div class="cart-item__title">Филадельфия хит ролл</div>
-										<div class="cart-item__weight">6 шт. / 182г.</div>
-
-										<!-- cart-item__details -->
-										<div class="cart-item__details">
-
-											<div class="items items--small">
-												<div class="items__control">-</div>
-												<div class="items__current">1</div>
-												<div class="items__control">+</div>
-											</div>
-
-											<div class="price">
-												<div class="price__currency">230 ₽</div>
-											</div>
-
-										</div>
-										<!-- // cart-item__details -->
-
-									</div>
-								</div>
-							</div>
-							<!-- // cart-item  -->
-
-							<!-- cart-item  -->
-							<div class="cart-item">
-								<div class="cart-item__top">
-									<div class="cart-item__img">
-										<img src="img/roll/philadelphia.jpg" alt="">
-									</div>
-									<div class="cart-item__desc">
-										<div class="cart-item__title">Филадельфия хит ролл</div>
-										<div class="cart-item__weight">6 шт. / 182г.</div>
-
-										<!-- cart-item__details -->
-										<div class="cart-item__details">
-
-											<div class="items items--small">
-												<div class="items__control">-</div>
-												<div class="items__current">1</div>
-												<div class="items__control">+</div>
-											</div>
-
-											<div class="price">
-												<div class="price__currency">230 ₽</div>
-											</div>
-
-										</div>
-										<!-- // cart-item__details -->
-
-									</div>
-								</div>
-							</div>
-							<!-- // cart-item  -->
-
-							<!-- cart-item  -->
-							<div class="cart-item">
-								<div class="cart-item__top">
-									<div class="cart-item__img">
-										<img src="img/roll/philadelphia.jpg" alt="">
-									</div>
-									<div class="cart-item__desc">
-										<div class="cart-item__title">Филадельфия хит ролл</div>
-										<div class="cart-item__weight">6 шт. / 182г.</div>
-
-										<!-- cart-item__details -->
-										<div class="cart-item__details">
-
-											<div class="items items--small">
-												<div class="items__control">-</div>
-												<div class="items__current">1</div>
-												<div class="items__control">+</div>
-											</div>
-
-											<div class="price">
-												<div class="price__currency">230 ₽</div>
-											</div>
-
-										</div>
-										<!-- // cart-item__details -->
-
-									</div>
-								</div>
-							</div>
-							<!-- // cart-item  -->
-
-					
-
-						
-
-							<div class="cart-total">
-								<p><span class="h5">Доставка:</span> <span class="delivery-cost free">бесплатно</span> </p>
-								<p><span class="h5">Итого:</span> <span class="total-price">330</span> <span class="rouble">₽</span></p>
-							</div>
-
-
-						</div>
-						<!-- // cart-wrapper -->
-
-					</div>
-
-					<div class="card-body border-top">
-						<h5 class="card-title">Оформить заказ</h5>
-
-						<form>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Ваш номер телефона">
-							</div>
-							<button type="submit" class="btn btn-primary">Заказать</button>
-						</form>
-
-
-					</div>
-				</div>
-				<!-- // Корзина Полная -->
-
-			</div>
-		</div>
-	</div>
-
-	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
-	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
