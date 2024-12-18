@@ -54,7 +54,6 @@ const renderCards = (array) => {
       </li>`
     );
 
-    // Привязываем обработчики событий к текущей карточке
     cardControls(container.lastElementChild, card);
   });
 };
@@ -111,7 +110,6 @@ const addToCart = (card) => {
       </li>`
     );
 
-    // Привязываем обработчики событий к кнопкам в корзине
     cartControls(cartEmpty.firstElementChild, card);
     updateTotalPrice();
   }
@@ -215,6 +213,7 @@ const showCartAlert = () => {
 
 const showTotal = () => {
   const totalPriceDisplay = document.querySelector(".cart__total");
+
   if (totalPriceDisplay) {
     totalPriceDisplay.style.display = "block"; // Скрываем элемент с общей суммой
   }
@@ -238,7 +237,20 @@ const updateTotalPrice = () => {
     const totalPriceDisplay = document.querySelector(
       ".cart__total-title--orange"
     );
+
     totalPriceDisplay.textContent = `${totalPrice} ₽`;
+
+    const totalTitle = document.querySelector(".cart__total-title--green");
+    totalTitle.innerHTML = "";
+    if (totalPrice < 1500) {
+      totalTitle.innerHTML = `До бесплатной доставки ${1500 - totalPrice}`;
+      totalTitle.style.fontSize = "12px";
+      totalTitle.style.color = "red";
+    } else {
+      totalTitle.innerHTML = `бесплатно`;
+      totalTitle.style.fontSize = "18px";
+      totalTitle.style.color = "green";
+    }
   });
 };
 

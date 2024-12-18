@@ -156,7 +156,7 @@ body {
   border: 1px solid var(--color-orange);
   border-radius: var(--border-radius);
   font-size: 16px;
-
+  font-family: "Noto Sans", sans-serif;
 }
 
 .cart {
@@ -273,7 +273,7 @@ body {
 }
 
 .cart__total-title {
-  font-size: 20px;
+  font-size: 18px !important;
   font-weight: 500;
 }
 
